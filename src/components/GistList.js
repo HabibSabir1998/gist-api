@@ -32,6 +32,7 @@ const GistList = ({ search }) => {
           }
         }
       } catch (error) {
+        dispatch(addAllGists([]));
         console.log({ error });
       } finally {
         setLoading(false);
